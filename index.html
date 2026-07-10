@@ -1,77 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragini Saxena | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="parent">
-        <div id="nav">
+    <main id="parent">
+        <nav id="nav">
             <div id="logo">Ragini Saxena</div>
             <div id="item">
-                 <div>Home</div>
-                 <div>About</div>
-                 <div>Projects</div>
-                 <div>Contacts</div>
-             </div>
-        </div>
+                <a href="#parent">Home</a>
+                <a href="#bottom">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
         <div id="bg"></div>
         <div id="circle"></div>
         <div id="mee"></div>
-        <div id="hy"> 
+
+        <section id="hy">
             <h2>Hello</h2>
             <h3>I'm Ragini</h3>
             <h1>Web developer</h1>
-            <button id="btn1">Got a project?</button>
-            <button id="btn2">My resume</button>
+            <div class="hero-actions">
+                <a id="btn1" href="#contact">Got a project?</a>
+                <a id="btn2" href="#projects">My work</a>
+            </div>
             <div id="dot"></div>
             <div id="line"></div>
-        </div>
-        <div id="program">
-             <div>HTMLS</div>
-             <div>CSS</div>
-             <div>Javascript</div>
-             <div>Node.js</div>
-             <div>React</div>
-             <div>Git</div>
-             <div>Github</div>
+        </section>
 
-        </div>
-        <div id="bottom">
-            <div id="do">
-                <div>Website Development</div>
-                <div>App Development</div>
-                <div>Website hosting</div>
-            </div>
-            <div id="abt">
-                <h1>About me</h1>
-                <p>I’m a passionate Web Developer focused on building responsive, user-friendly, and high-performing websites and web applications. I specialize in creating clean, efficient code and intuitive user experiences. I enjoy turning complex problems into simple, beautiful solutions</p>
-            </div>
-                <div id="history">
-                     <div>
-                        120+
-                        <p>Completed Projects</p>
-                    </div>
-                    <div>
-                        95%
-                        <p>Client Satisfaction</p>
-                    </div>
-                    <div>
-                        2+
-                        <p>Years of Experience</p>
-                    </div>
-                </div>
-            
-        </div>
-        <div id="dolne">
+        <section id="program">
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>JavaScript</div>
+            <div>Node.js</div>
+            <div>React</div>
+            <div>Git</div>
+            <div>GitHub</div>
+        </section>
+
+        <section id="bottom">
+            <div id="dolne">
                 <div class="line l1"></div>
                 <div class="dt"></div>
                 <div class="line l2"></div>
                 <div class="dt dt2"></div>
                 <div class="line l3"></div>
+            </div>
+
+            <div id="do">
+                <div>Website Development</div>
+                <div>App Development</div>
+                <div>Website Hosting</div>
+            </div>
+
+            <div id="abt">
+                <h2>About me</h2>
+                <p>I'm a passionate Web Developer focused on building responsive, user-friendly, and high-performing websites and web applications. I specialize in clean code and intuitive user experiences, turning complex problems into simple, beautiful solutions.</p>
+            </div>
+
+            <div id="history">
+                <div>
+                    120+
+                    <p>Completed Projects</p>
+                </div>
+                <div>
+                    95%
+                    <p>Client Satisfaction</p>
+                </div>
+                <div>
+                    2+
+                    <p>Years of Experience</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="projects" class="section">
+        <div class="section-title">
+            <p>Selected work</p>
+            <h2>Projects</h2>
         </div>
-        
-    </div>
-    
+        <div class="project-grid">
+            <article class="project-card">
+                <span>01</span>
+                <h3>Portfolio Website</h3>
+                <p>A responsive personal portfolio with clean sections, smooth motion, and contact-focused calls to action.</p>
+                <div>HTML | CSS | JavaScript</div>
+            </article>
+            <article class="project-card">
+                <span>02</span>
+                <h3>Business Landing Page</h3>
+                <p>A modern landing page layout built for fast reading, service highlights, and visitor conversion.</p>
+                <div>React | CSS | Git</div>
+            </article>
+            <article class="project-card">
+                <span>03</span>
+                <h3>Web App Dashboard</h3>
+                <p>An organized dashboard interface with cards, activity stats, and reusable frontend components.</p>
+                <div>Node.js | React | API</div>
+            </article>
+        </div>
+    </section>
+
+    <section id="skills" class="section alt-section">
+        <div class="section-title">
+            <p>What I use</p>
+            <h2>Skills</h2>
+        </div>
+        <div class="skill-wrap">
+            <article>
+                <h3>Frontend</h3>
+                <p>HTML, CSS, JavaScript, React, responsive design, animations, and accessibility basics.</p>
+            </article>
+            <article>
+                <h3>Backend</h3>
+                <p>Node.js, APIs, databases, routing, authentication basics, and deployment workflows.</p>
+            </article>
+            <article>
+                <h3>Tools</h3>
+                <p>Git, GitHub, VS Code, browser dev tools, testing, debugging, and project organization.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="contact-copy">
+            <p class="contact-label">Let's build something</p>
+            <h2>Have a project in mind?</h2>
+            <p>I can help design and develop clean websites, web apps, and polished user interfaces.</p>
+        </div>
+        <form>
+            <input type="text" placeholder="Your name" aria-label="Your name">
+            <input type="email" placeholder="Email address" aria-label="Email address">
+            <textarea placeholder="Tell me about your project" aria-label="Project details"></textarea>
+            <button type="submit">Send message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Ragini Saxena</p>
+        <p>Web Developer | Portfolio</p>
+    </footer>
 </body>
 </html>
